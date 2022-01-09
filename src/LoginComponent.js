@@ -26,7 +26,7 @@ render(){
            console.log(response.data)
            if(response.data){
                await localStorage.setItem('access-token',response.data);
-               this.props.history.push('./movie')
+               this.props.history.push('/movie')
            }
         }
         catch(err)
