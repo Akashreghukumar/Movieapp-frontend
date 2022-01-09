@@ -14,7 +14,7 @@ function MovieComponent(props) {
     const token = localStorage.getItem('access-token');
 
     useEffect(async () => {
-        var response = await axios.get('http://localhost:3001/movie/get', {
+        var response = await axios.get('https://moviebackend7.herokuapp.com/movie/get', {
             headers: {
                 'access-token': token
             }
