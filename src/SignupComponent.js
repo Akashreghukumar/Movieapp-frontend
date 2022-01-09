@@ -18,7 +18,7 @@ render(){
     const handleSubmit=async (e)=>{
         e.preventDefault();
         try{
-           const response= await axios.post('http://localhost:3001/register/signup',
+           const response= await axios.post('https://moviebackend7.herokuapp.com/register/signup',
            {
 
                username:this.state.username,
